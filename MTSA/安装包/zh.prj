@@ -1,0 +1,149 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="E:\学术文献\GNSS时间序列\GITHUB\zh.prj" location="E:\学术文献\GNSS时间序列\GITHUB" name="zh" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>zh</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\zh\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\zh\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\zh\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\zh\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\zh</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>E:\MTSA\zh.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>E:\MTSA\converson_format.fig</file>
+      <file>E:\MTSA\converson_format.m</file>
+      <file>E:\MTSA\cs.m</file>
+      <file>E:\MTSA\emd.m</file>
+      <file>E:\MTSA\Emdplus.m</file>
+      <file>E:\MTSA\funcz.m</file>
+      <file>E:\MTSA\funpfx.m</file>
+      <file>E:\MTSA\funycz.m</file>
+      <file>E:\MTSA\get_hz_cezhanm.m</file>
+      <file>E:\MTSA\gmwc.m</file>
+      <file>E:\MTSA\lianhecc.m</file>
+      <file>E:\MTSA\neu_tseries.m</file>
+      <file>E:\MTSA\pos_neu.m</file>
+      <file>E:\MTSA\pos_tseries.m</file>
+      <file>E:\MTSA\sz.fig</file>
+      <file>E:\MTSA\sz.m</file>
+      <file>E:\MTSA\tseries_neu.m</file>
+      <file>E:\MTSA\tseries_pos.m</file>
+      <file>E:\MTSA\Untitled.m</file>
+      <file>E:\MTSA\xlwgm.m</file>
+      <file>E:\MTSA\zfnum.m</file>
+      <file>E:\MTSA\zh.fig</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>E:\MTSA\find_m_d.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\zh\for_testing" name="splash.png" optional="false">E:\学术文献\GNSS时间序列\GITHUB\zh\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\zh\for_testing" name="readme.txt" optional="true">E:\学术文献\GNSS时间序列\GITHUB\zh\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\zh\for_testing" name="zh.exe" optional="false">E:\学术文献\GNSS时间序列\GITHUB\zh\for_testing\zh.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\MATLAB</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
